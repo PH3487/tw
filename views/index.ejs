@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url('https://toyheroes.net/img/bg_default.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex" role="search">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item" id="nav-login">
+                            <button class="btn nav-link" data-bs-toggle="modal"
+                                data-bs-target="#modalLogin ">Login</button>
+                        </li>
+                        <li class="nav-item" id="nav-profile">
+                            <button class="btn nav-link" id="btnProfileName"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="card col-12 col-md-6" style="background-color: transparent;" data-aos="fade-right"
+                data-aos-duration="1000">
+                <div class="card-body text-white">
+
+                    <h3 class="card-title">Become a top player in your favorite games with ease and lots of fun</h5>
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo alias nihil, temporibus
+                            numquam vel dolores consequatur dolorum? Accusantium quas iste nesciunt atque neque?
+                            Excepturi officia, tempore, veritatis optio, deleniti cum alias sapiente dignissimos
+                            possimus vel aut unde consectetur laudantium.
+                        </span>
+                        <div class="row">
+                            <div class="col-4 col-md-4 d-grid">
+                                <button class="btn btn-outline-success btn-sm btn-block">
+                                    <i class="fas fa-sign-in-alt"></i> Login
+                                </button>
+                            </div>
+                            <div class="col-4 col-md-4 d-grid">
+                                <button class="btn btn-outline-success btn-sm btn-block">
+                                    <i class="fas fa-wallet"></i> Topup
+                                </button>
+                            </div>
+                            <div class="col-4 col-md-4 d-grid">
+                                <button class="btn btn-outline-success btn-sm btn-block">
+                                    <i class="fas fa-phone-alt"></i> Contact
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                <img src="/image/osu.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="my-3 text-center text-white">
+            <h3 class="text-center">คำถามที่พบบ่อย </h3>
+            <label for="">หากไม่สามารถแก้ไขได้ ติดต่อแอดมินที่ Discord</label>
+        </div>
+
+        <div class="row">
+            <% for(i=0;i<handlerLoop.length;i++){ %>
+                <div class="col-6 col-md-4 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><%- handlerLoop[i].title;%></h5>
+                            <span class="text-muted">
+                                <%- handlerLoop[i].description;%>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+
+
+        <div class="my-3 text-center text-white">
+            <h3 class="text-center">เติมเงิน</h3>
+            <span>สามารถชำระได้ที่ช่องทาง Truemoney Wallet / Banking / บัตรเติมเงิน Truemoney Card </span>
+        </div>
+
+
+        <div class="row">
+            <% for(i=0;i< topup.length;i++){ %>
+                <div class="col-6 col-md-4 my-2">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4><%- topup[i].price;%></h4>
+                        </div>
+                        <div class="card-body">
+                            <span class="text-muted"><%- topup[i].cash;%></span>
+                            <br>
+                            <label class="text-muted">เติมเงินผ่านธนาคาร รับโบนัสเพิ่ม <span class="text-danger"><%- topup[i].bank; %></span> </label>
+                            <label class="text-muted">เติมเงินผ่าน Truemoney รับโบนัสเพิ่ม <span class="text-danger"><%- topup[i].truemoney%></span> </label>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <style>
+        footer {
+            background-color: #262626 !important;
+            box-shadow: 0 -10px 20px 1px rgb(0 0 0 / 30%) !important;
+        }
+        .list-inline-footer a{
+            color: #3cc55a !important;
+            text-decoration: none;
+        }
+    </style>
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-3">
+                <div class="col">
+                    <p class="my-2 text-white">Copyright © 2023 Bueno Ltd.</p>
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                    <ul class="list-inline my-2 list-inline-footer">
+                        <li class="list-inline-item"><a href="https://discord.com" target="_blank">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Form Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="loginBtn" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- aos init -->
+    <script>
+        AOS.init();
+        $("#nav-profile").hide();
+        function modalLogin() {
+            const myModal = document.getElementById('myModal')
+            const myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', () => {
+                myInput.focus()
+            })
+        }
+        $("#loginBtn").click(function () {
+            var username = $("#username").val();
+            var password = $("#password").val();
+            $.post('/api/login', { username: username, password: password }, function (data) {
+                if (data.success) {
+                    $("#btnProfileName").text(username).show();
+                    $("#nav-login").hide();
+                    $("#nav-profile").show();
+                    alert('logged in');
+                } else {
+                    alert(data.message);
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

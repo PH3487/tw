@@ -1,0 +1,20 @@
+{
+    "topup": [
+        {
+            "price": "50 Baht",
+            "cash": "5,000 Cash",
+            "bank": "+10% Bonus",
+            "truemoney": "+5% Bonus"
+        },{
+            "price": "100 Baht",
+            "cash": "10,000 Cash",
+            "bank": "+15% Bonus",
+            "truemoney": "+10% Bonus"
+        },{
+            "price": "300 Baht",
+            "cash": "30,000 Cash",
+            "bank": "+20% Bonus",
+            "truemoney": "+15% Bonus"
+        }
+    ]
+}

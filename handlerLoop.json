@@ -1,0 +1,17 @@
+{
+    "errors": [
+        {
+            "title":"เข้าเกมแล้วขึ้น Firewall has blocked",
+            "description": "กรุณาตรวจสอบ Firewall หากยังไม่ได้ กรุณาติดต่อแอดมินที่ <a href=\"https://discord.com\" target=\"_blank\">Discord</a>"
+        },{
+            "title": "ไม่สามารถติดตั้งเกมได้",
+            "description": "กรุณาติดต่อแอดมินที่ <a href=\"https://discord.com\" target=\"_blank\">Discord</a>"
+        },{
+            "title":"เข้าเกมแล้วเด้งออกจากเกม",
+            "description": "ลบเกมติดตั้งใหม่ แล้วลองเข้าเกมใหม่อีกครั้ง"
+        },{
+            "title":"ระบบแจ้งว่า Network Error",
+            "description": "โปรดตรวจสอบเครือข่ายของคุณ และลองเข้าเกมใหม่อีกครั้ง"
+        }
+    ]
+}
